@@ -6,5 +6,5 @@ node('android') {
     sh "ls && echo 'Dummy Jenkinsfile'"
 
     stage 'Archive'
-    archiveArtifacts artifacts: '/app/src/main/AndroidManifest.xml'
+    archiveArtifacts artifacts: '**/AndroidManifest.xml'
 }
